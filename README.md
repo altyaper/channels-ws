@@ -81,6 +81,9 @@ Phoenix currently ships with its own JavaScript client but we could use any clie
 
 ## CODE CODE!
 
+#### Install Phoenix
+`mix archive.install https://github.com/phoenixframework/archives/raw/master/phoenix_new.ez`
+
 #### Create a new Phoenix app
 
 `mix phoenix.new appname`
@@ -88,7 +91,7 @@ Phoenix currently ships with its own JavaScript client but we could use any clie
 #### Install dependencies manually
 `mix deps.get` - Install elixir dependencies
 
-`npm install` - install node dependencies
+`npm install` - Install node dependencies
 
 #### Run Phoenix server
 `mix phoenix.sever`
