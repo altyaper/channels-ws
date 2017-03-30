@@ -1,0 +1,7 @@
+<section id="vote-page">
+  <div class="center">
+    <a href="#" id="green" class="nice-button"></a>
+    <a href="#" id="yellow" class="nice-button"></a>
+    <a href="#" id="red" class="nice-button"></a>
+  </div>
+</section>

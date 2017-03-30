@@ -1,1 +1,154 @@
-/* This file is for your main application css. */
+body {
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png");
+  background-size: 200px;
+  animation: moveBackground 100s linear infinite;
+  font-family: 'Helvetica';
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+#green.nice-button, .face-green {
+  background-image: url('../images/green.png');
+}
+
+#yellow.nice-button, .face-yellow {
+  background-image: url('../images/yellow.png');
+}
+#faces {
+  text-align: center;
+}
+
+#faces .face ~ h2 {
+  display: none;
+}
+
+#red.nice-button, .face-red {
+  background-image: url('../images/red.png');
+}
+
+.face:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+#faces h2 {
+  font-size: 50px;
+  color: gray;
+  font-family: 'Helvetica';
+}
+#faces h2 img {
+  width: 50px;
+}
+
+.nice-button, .face {
+  width: 100px;
+  height: 100px;
+  background-size: 100%;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: appear 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  margin: 10px;
+}
+
+.nice-button {
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.telon, .telon_screen {
+  background-color: #55548c;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: all 4s ease;
+  z-index: 1;
+}
+
+.telon.active, .telon_screen.active {
+  transform: translateY(0%);
+}
+.telon h1, .telon_screen h1 {
+  margin: 0;
+  color: white;
+  font-size: 200px;
+}
+.follow {
+  position: fixed;
+  bottom: 0;
+  background-color: #55548c;
+  width: 100%;
+  left: 0;
+  font-size: 0;
+  z-index: 100;
+}
+.follow .half {
+  width: 50%;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+}
+
+.nice-button.active {
+  background-size: 90%;
+  background-color: #55548c;
+  padding: 10px;
+}
+
+.nice-button:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+#vote-page .center {
+  font-size: 50px;
+  font-family: 'Helvetica';
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  #faces div {
+    width: 50px;
+    height: 50px;
+  }
+  .telon h1 {
+    font-size: 50px;
+  }
+}
