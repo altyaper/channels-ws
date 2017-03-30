@@ -78,3 +78,17 @@ This layer handles all the message dispatching into and out of the Channel.
 ## Client Libraries
 
 Phoenix currently ships with its own JavaScript client but we could use any client library.
+
+## CODE CODE!
+
+#### Create a new Phoenix app
+
+`mix phoenix.new appname`
+
+#### Install dependencies manually
+`mix deps.get` - Install elixir dependencies
+
+`npm install` - install node dependencies
+
+#### Run Phoenix server
+`mix phoenix.sever`
